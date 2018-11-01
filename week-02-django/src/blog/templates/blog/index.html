@@ -4,6 +4,8 @@
 <div class="colorful-text">
   <div>hello world, {{ name }}</div>
   <div>hello world, {{ name }}</div>
-  <div>hello world, {{ name }}</div>
+  {% for article in article_list %}
+    {{ article.title }}
+  {% endfor %}
 </div>
 {% endblock %}
